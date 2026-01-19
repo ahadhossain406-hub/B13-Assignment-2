@@ -1,0 +1,236 @@
+.header-bar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #1A0B2E;
+    width: 1600px;
+}
+.header-bar .nav-bar ul{
+    display: flex;
+    gap: 20px;
+}
+.header-bar .nav-bar li{
+    list-style: none;
+   
+}
+.header-bar .nav-bar a{
+    text-decoration: none;
+    color: white;
+}
+.header-bar .nav-bar a:hover{
+    background-color: yellowgreen;
+}
+.color-1{
+    background: linear-gradient(
+    90deg,
+    #facc15 0%,  
+    #ec4899 45%, 
+    #9333ea 100%  
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.header-bar .btn-1{
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    background: linear-gradient(
+    90deg,
+    #facc15 0%,  
+    #ec4899 45%,  
+    #9333ea 100%  
+  );
+  cursor: pointer;
+  width: 135px;
+  height: 44px;
+  padding: 12px;
+  line-height: 12px;
+  border-radius: 20px;
+}
+.header-bar .menu-icon{
+    display: none;
+}
+.header-bar .menu-icon img{
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+}
+
+.section-container{
+    background-color: #1A0B2E;
+    border: 1px solid red;
+    width: 1600px;
+    height: 760px;
+    background-image: url(../assets/hero-bg.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-container .image{
+    position: relative;
+    width: 350px;
+    height: 350px;
+    margin: auto;
+}
+.section-container .image .image-1{
+    width: 350px;
+    height: 350px;
+
+}
+.section-container .image .image-2{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: contain;
+}
+.section-container .badge{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: #00ff99;
+    color: #000;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+.section-container .text{
+    text-align: center;
+}
+.section-container .text h2{
+    font-size: 60px;
+    font-weight: bolder;
+    color: white;
+}
+.section-container .text p{
+    font-size: 16px;
+    color: white;
+    margin-top: 8px;
+}
+.section-container .text .btn-spotify{
+    width: 201px;
+    height: 44px;
+    color: white;
+    font-size: 16px;
+    background: linear-gradient(
+        90deg,
+        #facc15 0%,  
+        #ec4899 45%,  
+        #9333ea 100%  
+  );
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+ 
+}
+.section-container .text .btn-massage{
+    width: 147px;
+    height: 44px;
+    color: #00FF88;
+    font-size: 16px;
+    font-weight: 500;
+    background: transparent;
+    border: 1px solid #00FF88;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.section-container .text .button-div{
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+@media screen and (max-width: 576px){
+    .header-bar{
+        justify-content: space-between;
+        padding: 14px 20px;
+        width: auto;
+    }
+    .header-bar .nav-bar{
+        display: none;
+    }
+    .header-bar .btn-1{
+        display: none;
+    }
+    .header-bar .menu-icon{
+        display: block;
+    }
+
+  /**/
+
+    .section-container{
+        width: auto;
+        height: auto;
+      
+        padding: 40px 16px;
+        background-image: url(../assets/hero-bg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        flex-direction: column;
+    }
+
+    /* image wrapper */
+    .section-container .image{
+        width: 260px;
+        height: 260px;
+        margin-bottom: 32px;
+    }
+
+    /* background circle */
+    .section-container .image .image-1{
+        width: 100%;
+        height: 100%;
+    }
+
+    /* center mic image */
+    .section-container .image .image-2{
+        width: 140px;
+        height: 140px;
+    }
+
+    /* badge */
+    .section-container .badge{
+        top: 10px;
+        right: 10px;
+        font-size: 10px;
+        padding: 4px 10px;
+    }
+
+    /* text */
+    .section-container .text h2{
+        font-size: 32px;
+    }
+
+    .section-container .text p{
+        font-size: 14px;
+    }
+
+    /* buttons */
+    .section-container .text .button-div{
+        flex-direction: column;
+        gap: 12px;
+        margin-top: 24px;
+    }
+
+    .section-container .text .btn-spotify,
+    .section-container .text .btn-massage{
+        width: 100%;
+        max-width: 260px;
+        height: 44px;
+    }
+}
+
