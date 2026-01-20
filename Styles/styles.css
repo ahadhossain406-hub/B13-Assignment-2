@@ -47,6 +47,10 @@
   padding: 12px;
   line-height: 12px;
   border-radius: 20px;
+  transition: transform 0.4s ease;
+}
+.header-bar .btn-1:hover{
+    transform: scale(1.25);
 }
 .header-bar .menu-icon{
     display: none;
@@ -59,7 +63,6 @@
 
 .section-container{
     background-color: #1A0B2E;
-    border: 1px solid red;
     max-width: 1600px;
     height: 760px;
     background-image: url(../assets/hero-bg.png);
@@ -97,6 +100,11 @@
     border-radius: 20px;
     font-size: 12px;
     font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.4s ease;
+}
+.section-container .badge:hover{
+    transform: scale(1.5);
 }
 .section-container .text{
     text-align: center;
@@ -127,7 +135,11 @@
   justify-content: center;
   align-items: center;
   gap: 5px;
- 
+  cursor: pointer;
+ transition: transform 0.4s ease;
+}
+.section-container .text .btn-spotify:hover{
+    transform: scale(1.25);
 }
 .section-container .text .btn-massage{
     width: 147px;
@@ -142,6 +154,11 @@
     justify-content: center;
     align-items: center;
     gap: 5px;
+    cursor: pointer;
+    transition: transform 0.4s ease;
+}
+.section-container .text .btn-massage:hover{
+    transform: scale(1.25);
 }
 .section-container .text .button-div{
     display: flex;
@@ -313,6 +330,7 @@
 
 .episode .host-container{
     max-width: 1200px;
+    margin-bottom: 120px;
 }
 .host-container h2{
     font-size: 48px;
@@ -334,6 +352,29 @@
     gap: 20px;
 }
 
+
+.footer{
+    background-image: url("../assets/footer-bg.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-height: 100vh;
+}
+.footer .footer-container{
+    max-width: 1200px;
+    width: 100%;
+    padding: 120px 24px;
+    text-align: center;
+}
+.footer-container .footer-icons{
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
 
 
 
@@ -467,5 +508,23 @@
   .host-container .host-description .icons{
     justify-content: center;
   }
+
+  .footer{
+    background-image: url(../assets/footer-bg-mobile.png);
+    background-position: center center;
+    min-height: 100vh;
+  }
+  .footer-container{
+    padding: 64px 16px;
+  }
+  .footer-icons{
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .footer-icons img{
+    width: 28px;
+  }
+   
 }
 
