@@ -377,8 +377,6 @@
 }
 
 
-
-
 @media screen and (max-width: 576px){
     .header-bar{
         justify-content: space-between;
@@ -395,7 +393,6 @@
         display: block;
     }
 
- 
     .section-container{
         max-width: auto;
         height: auto; 
@@ -586,7 +583,6 @@
         background-position: center;
         min-height: auto;
     }
-
     .footer-icons{
         gap: 32px;
     }
