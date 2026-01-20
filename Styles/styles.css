@@ -528,3 +528,67 @@
    
 }
 
+
+@media screen and (min-width: 577px) and (max-width: 992px){
+
+    .header-bar{
+        padding: 16px 32px;
+    }
+
+    .section-container{
+        padding: 60px 32px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .section-container .image{
+        width: 300px;
+        height: 300px;
+        margin-bottom: 40px;
+    }
+
+    .section-container .text h2{
+        font-size: 40px;
+    }
+
+    .section-container .text p{
+        font-size: 16px;
+    }
+
+    .about-container{
+        padding: 40px 24px;
+    }
+
+    .about-container .about-grid{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 32px;
+    }
+
+    .choose-container{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            "audio device"
+            "audio location"
+            "icon resource";
+        gap: 24px;
+    }
+
+    .episode-container .podcast{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .host-container .host{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer{
+        background-position: center;
+        min-height: auto;
+    }
+
+    .footer-icons{
+        gap: 32px;
+    }
+}
+
