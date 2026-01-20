@@ -3,7 +3,7 @@
     justify-content: space-around;
     align-items: center;
     background-color: #1A0B2E;
-    width: 1600px;
+    max-width: 1600px;
 }
 .header-bar .nav-bar ul{
     display: flex;
@@ -60,7 +60,7 @@
 .section-container{
     background-color: #1A0B2E;
     border: 1px solid red;
-    width: 1600px;
+    max-width: 1600px;
     height: 760px;
     background-image: url(../assets/hero-bg.png);
     display: flex;
@@ -152,7 +152,7 @@
 
 .about-container{
     background-color: #1A0B2E;
-    width: 1600px;
+    max-width: 1600px;
     height: 646px;
 }
 .about-container .about-info{
@@ -195,13 +195,87 @@
 }
 
 
+.choose{
+    background-color: #230E3D;
+    max-width: 1600px;
+    color: white;
+    margin: auto;
+    padding: 100px 0;
+}
+.choose .h2{
+    text-align: center;
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 64px;
+}
+
+.choose-container .audio{
+    grid-area: audio;
+}
+.choose-container .device{
+    grid-area: device;
+}
+.choose-container .location{
+    grid-area: location;
+}
+.choose-container .icon{
+    grid-area: icon;
+}
+.choose-container .resource{
+    grid-area: resource;
+}
+.choose-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: 
+    "audio audio device device device device"
+    "audio audio location location location location"
+    "icon icon icon icon resource resource";
+    
+}
+
+.choose-container .audio,
+.choose-container .device,
+.choose-container .location,
+.choose-container .icon,
+.choose-container .resource{
+    background-color: #351165;
+    padding: 32px;
+    border-radius: 24px;
+}
+
+.choose-container .audio h3,
+.choose-container .device h3,
+.choose-container .location h3,
+.choose-container .icon h3,
+.choose-container .resource h3{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.choose-container .audio p,
+.choose-container .device p,
+.choose-container .location p,
+.choose-container .icon p,
+.choose-container .resource p{
+    font-size: 16px;
+    font-weight:400;
+}
+
+
+
 
 
 @media screen and (max-width: 576px){
     .header-bar{
         justify-content: space-between;
         padding: 14px 20px;
-        width: auto;
+        max-width: auto;
     }
     .header-bar .nav-bar{
         display: none;
@@ -215,7 +289,7 @@
 
  
     .section-container{
-        width: auto;
+        max-width: auto;
         height: auto; 
         padding: 40px 16px;
         background-image: url(../assets/hero-bg.png);
@@ -270,7 +344,8 @@
     }
 
   .about-container {
-    width: auto;
+    max-width: auto;
+    max-height: auto;
   }
 
   .about-info h3 {
@@ -294,5 +369,23 @@
   .stat span {
     font-size: 12px;
   }
+ 
+
+  .choose{
+    max-width: auto;
+  }
+  .choose .h2{
+    font-size: 32px;
+  }
+  .choose-container{
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: 
+            "audio"
+            "device"
+            "location"
+            "icon"
+            "resource";
+  }
+
 }
 
