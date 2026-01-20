@@ -268,6 +268,73 @@
 }
 
 
+.episode{
+    background-color: #1A0B2E;
+    max-width: 1600px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.episode .episode-container{
+    max-width: 1200px;
+}
+.episode-container h2{
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+}
+.episode-container .podcast{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+.episode-container .podcast .podcast1{
+    background-color: #250D44;
+    border-radius: 20px;
+    padding: 12px;
+    margin-bottom: 20px;
+}
+.episode-container .podcast .podcast2{
+    background-color: #250D44;
+    border-radius: 20px;
+    padding: 12px;
+    margin-bottom: 20px;
+}
+.episode-container .podcast .podcast3{
+    background-color: #250D44;
+    border-radius: 20px;
+    padding: 12px;
+    margin-bottom: 20px;
+}
+
+
+.episode .host-container{
+    max-width: 1200px;
+}
+.host-container h2{
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 80px;
+}
+.host-container .host{
+    background-color: #250D44;
+    padding: 40px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 28px;
+}
+.host-container .host-description .icons{
+    display: flex;
+    gap: 20px;
+}
+
+
 
 
 
@@ -387,5 +454,18 @@
             "resource";
   }
 
+  .episode{
+    max-width: auto;
+  }
+  .episode-container .podcast{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .host-container .host{
+    flex-direction: column;
+    text-align: center;
+  }
+  .host-container .host-description .icons{
+    justify-content: center;
+  }
 }
 
