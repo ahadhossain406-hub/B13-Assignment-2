@@ -67,9 +67,12 @@ html, body{
 
 .section-container{
     background-color: #1A0B2E;
-    max-width: 1600px;
-    height: 760px;
+    width: 100%;
+    min-height: 100vh;
     background-image: url(../assets/hero-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -425,14 +428,12 @@ html, body{
     }
 
     .section-container{
-        max-width: auto;
-        height: auto; 
+        width: 100%;
+        min-height:100vh;
         padding: 40px 16px;
-        background-image: url(../assets/hero-bg.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
         flex-direction: column;
+        background-size:contain;
+        background-position: center;
     }
 
     .section-container .image{
