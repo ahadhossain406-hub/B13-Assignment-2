@@ -497,6 +497,8 @@
   }
   .episode-container .podcast{
     grid-template-columns: repeat(1, 1fr);
+    margin-left: 10px;
+    padding: 14px;
   }
   .host-container .host{
     flex-direction: column;
