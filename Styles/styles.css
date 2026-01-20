@@ -297,6 +297,9 @@
 }
 .episode .episode-container{
     max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 16px;
 }
 .episode-container h2{
     font-size: 48px;
@@ -327,6 +330,13 @@
     margin-bottom: 20px;
 }
 
+.podcast iframe,
+.podcast img{
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto;
+    display: block;
+}
 
 .episode .host-container{
     max-width: 1200px;
